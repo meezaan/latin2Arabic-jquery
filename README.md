@@ -11,7 +11,7 @@ Include the JS with:
 Then, in your code:
 ```
 $(function() {
-    var numbers = $.latin2Arabic.toArabic('07/12/2014');
+    var numbers = $.latin2Arabic.toArabic('15/02/1436');
 
     // numbers now contains: ١٥/٢/١٤٣٦
     // Now do whatever you wish to with numbers
