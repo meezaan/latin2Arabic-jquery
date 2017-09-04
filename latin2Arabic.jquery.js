@@ -52,9 +52,28 @@ jQuery( document ).ready( function( $ ) {
             "html": "&#1641;"
           }
       ],
+      // Convert Latin to Arabic
       toArabic: function(number) {
           $.each(this._numerals, function(i,v) {
               number = number.replace(new RegExp(v.latin, 'g'), v.arabic);
+              //console.log(number);
+          });
+
+          return number;
+      },
+      // Convert Arabic to Latin
+      toLatin: function(number) {
+          $.each(this._numerals, function(i,v) {
+              number = number.replace(new RegExp(v.arabic, 'g'), v.latin);
+              //console.log(number);
+          });
+
+          return number;
+      },
+      // Convert Arabic to Html
+      toHtml: function(number) {
+          $.each(this._numerals, function(i,v) {
+              number = number.replace(new RegExp(v.arabic, 'g'), v.html);
               //console.log(number);
           });
 

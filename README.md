@@ -15,5 +15,9 @@ $(function() {
 
     // numbers now contains: ١٥/٢/١٤٣٦
     // Now do whatever you wish to with numbers
+    
+    // You can also use the other methods
+    var numbers = $.latin2Arabic.toLatin('١٥/٢/١٤٣٦'); // This will convert the latin to arabic
+    var numbers = $.latin2Arabic.toHtml('١٥/٢/١٤٣٦'); // This will convert the arabic to html entities
 });
 ```
